@@ -1,0 +1,74 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+  background: #f4f4f9;
+  color: #333;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Part 1: CSS Transitions & Animations */
+.animated-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.animated-btn:hover {
+  transform: scale(1.1);
+  background: #45a049;
+}
+
+/* A box to animate */
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: steelblue;
+  border-radius: 10px;
+  transition: all 0.5s ease;
+}
+
+/* CSS Keyframes */
+@keyframes slideRight {
+  from { transform: translateX(0); }
+  to { transform: translateX(200px); }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.slide {
+  animation: slideRight 1s forwards;
+}
+
+.fade {
+  animation: fadeOut 1s forwards;
+}
+
+/* Buttons Section */
+.controls button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: dodgerblue;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.controls button:hover {
+  background: navy;
+}
